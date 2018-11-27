@@ -10,3 +10,5 @@
        idrac_ip:   "{{ idrac_ip }}"
        idrac_user: "{{ idrac_user }}"
        idrac_pwd:  "{{ idrac_pwd }}"
+    register: sysinv
+  - debug: var=sysinv 
